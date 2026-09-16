@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>في بيتنا حنة - ليلة حنّة العروس زهور</title>
+  <meta name="description" content="دعوة تفاعلية راقية لليلة حناء العروس زهور من عبق التراث الفلسطيني">
+  
+  <!-- Google Arabic Traditional & Modern Fonts (El Messiri, Scheherazade New, Alexandria, Amiri, Tajawal) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;600;700&family=Amiri:ital,wght@0,400;0,700;1,400&family=El+Messiri:wght@500;600;700&family=Noto+Serif+Arabic:wght@400;600;700&family=Scheherazade+New:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- خلفية متساقطة تفاعلية لبتلات الورد التراثية -->
+  <canvas id="petals-canvas"></canvas>
+
+  <div class="main-page-wrapper">
+
+    <!-- 1. السيكشن الأول: العنوان الرئيسي والعروسة الكبيرة داخل إطار مربّع من أغصان النباتات وعلى منصة بيضاوية -->
+    <section class="bride-hero-section">
+      
+      <header class="hero-header text-header">
+        <!-- <h1 class="main-calligraphy-title">فِي بَيْتِنَا حِنّة</h1> -->
+        <p class="sub-calligraphy-phrase">فِي بَيْتِنَا فَرَحَةٌ ... وَفِي كُفُوفِنَا حِنّة</p>
+      </header>
+
+      <!-- المربع المزخرف بالإطار النباتي الجانبي + العروسة الكبيرة + القاعدة البيضاوية -->
+      <div class="bride-frame-container">
+        <!-- أضلاع الإطار النباتي الجانبي (يمين ويسار) -->
+        <img src="assets/images/vine_border.png" alt="إطار نباتي يمين" class="frame-vine vine-right">
+        <img src="assets/images/vine_border.png" alt="إطار نباتي يسار" class="frame-vine vine-left">
+
+        <!-- العروسة الكبيرة واقفه على منصة بيضاوية مضاءة -->
+        <div class="bride-stage-wrapper">
+          <img src="assets/images/bride_standalone.png" alt="عروس الحناء زهور" class="bride-enlarged-img">
+          
+          <!-- القاعدة البيضاوية التي تقف عليها العروسة مباشرة -->
+          <div class="podium-stage-base"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 2. السيكشن الثاني: نص الدعوة التراثي الأصيل -->
+    <section class="invitation-text-section">
+      <h2 class="invitation-hero-head">من عبق التراث... تبدأ الحكاية </h2>
+      
+      <div class="invitation-poem-body">
+        <p>بين نقوش التطريز الفلسطيني، ورائحة الحناء، وأصوات الفرح،</p>
+        <p>نحتفل بليلة تحمل في تفاصيلها جمال الماضي وفرحة المستقبل</p>
+        <!-- <br> -->
+        <p>ندعوكم لمشاركتنا ليلة حنّة عروستنا</p>
+        <p class="bride-name-line"><span class="bride-name-accent">المهندسة زهور</span></p>
+        <p>لنرسم معًا أجمل الذكريات في ليلة لا تُنسى</p>
+      </div>
+    </section>
+
+    <!-- 3. السيكشن الثالث: تفاصيل الوقت والمكان والتاريخ (بطاقات أوراق شجر منفصلة) -->
+    <section class="serene-details-container">
+      
+      <!-- كرت الوقت (ورقة شجر 1) -->
+      <div class="leaf-card-item">
+        <div class="leaf-item-top-icon">
+          <i class="far fa-clock"></i>
+        </div>
+        <div class="detail-title-label">الوقت</div>
+        <div id="event-time" class="detail-value-main">8:00 مساءً</div>
+      </div>
+
+      <!-- كرت المكان (ورقة شجر 2) -->
+      <div id="venue-card" class="leaf-card-item reverse-leaf">
+        <div class="leaf-item-top-icon">
+          <i class="fas fa-location-dot"></i>
+        </div>
+        <div class="detail-title-label">المكان</div>
+        <div id="venue-name" class="detail-value-main">بيت والد العروس - الطابق الأول</div>
+        <div id="venue-details" class="detail-value-extra">(أول النصر مفترق دياب للبناشر - مكتبة القرطبة)</div>
+        <div id="venue-city" class="detail-value-sub">غزة</div>
+      </div>
+
+      <!-- كرت التاريخ (ورقة شجر 3) -->
+      <div class="leaf-card-item">
+        <div class="leaf-item-top-icon">
+          <i class="far fa-calendar-alt"></i>
+        </div>
+        <div class="detail-title-label">التاريخ</div>
+        <div id="event-date-greg" class="detail-value-main font-nums">2026 / 9 / 28</div>
+        <div id="event-date-hijri" class="detail-value-sub">22 ربيع الآخر 1448 هـ</div>
+      </div>
+
+    </section>
+
+    <footer class="footer-note">
+      دامت دياركم بأفراح الحناء والمسرات عامرة 🕊️
+    </footer>
+
+  </div>
+
+  <!-- رابط الحقوق في آخر الصفحة بالكامل -->
+  <div class="bottom-credit-bar">
+    <a href="https://www.instagram.com/wasm.invites/" target="_blank" rel="noopener noreferrer" class="instagram-credit-link">
+      <i class="fab fa-instagram"></i>
+      <span> وسم للدعوات الإلكترونية | wasm.invites</span>
+    </a>
+  </div>
+
+  <!-- سكريبت البيانات والتطبيق -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
