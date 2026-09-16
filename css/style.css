@@ -62,10 +62,10 @@ body {
   width: 100%;
   max-width: 580px;
   margin: 0 auto;
-  padding: 40px 20px 60px 20px;
+  padding: 20px 20px 50px 20px;
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 30px;
 }
 
 /* --------------------------------------------------------------------------
@@ -79,7 +79,7 @@ body {
 }
 
 .hero-header {
-  margin-bottom: 25px;
+  margin-bottom: 12px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -119,8 +119,8 @@ body {
   position: relative;
   width: 100%;
   max-width: 500px;
-  margin: 10px auto 20px auto;
-  padding: 30px 25px;
+  margin: 0 auto 10px auto;
+  padding: 10px 20px 15px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -164,8 +164,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 460px;
-  padding-bottom: 20px;
+  min-height: 420px;
+  padding-bottom: 15px;
 }
 
 /* العروسة الكبيرة والبارزة متمركزة وثابتة على المنصة البيضاوية */
@@ -177,6 +177,7 @@ body {
   object-fit: contain;
   position: relative;
   z-index: 3;
+  margin-top: -15px;
   margin-bottom: -90px; /* ضبط موضع العروسة بدقة متناهية فوق المنصة */
   filter: drop-shadow(0 15px 25px rgba(142, 27, 36, 0.16));
   animation: brideFloating 4.5s ease-in-out infinite alternate;
@@ -708,24 +709,41 @@ body {
 }
 
 @media (max-width: 600px) {
+  .main-page-wrapper {
+    padding: 12px 14px 40px 14px;
+    gap: 20px;
+  }
+  .hero-header {
+    margin-bottom: 6px;
+  }
   .main-calligraphy-title {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   .sub-calligraphy-phrase {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
   }
   .top-title {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
   .quote-text {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
+  }
+  .bride-frame-container {
+    margin: 0 auto 10px auto;
+    padding: 5px 10px 10px 10px;
+  }
+  .bride-stage-wrapper {
+    min-height: 350px;
+    padding-bottom: 10px;
   }
   .bride-enlarged-img {
-    max-width: 320px;
-    max-height: 440px;
+    max-width: 310px;
+    max-height: 420px;
+    margin-top: -25px;
+    margin-bottom: -75px;
   }
   .podium-stage-base {
-    height: 35px;
-    bottom: 2px;
+    height: 32px;
+    max-width: 340px;
   }
 }
