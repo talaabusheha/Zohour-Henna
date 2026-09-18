@@ -554,19 +554,49 @@ body {
 }
 
 .footer-note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.no-kids-note {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-rose-accent);
+  background: rgba(184, 74, 91, 0.06);
+  padding: 7px 18px;
+  border-radius: 20px;
+  border: 1px dashed rgba(184, 74, 91, 0.25);
+  font-weight: 600;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.blessing-note {
   font-family: var(--font-calligraphy);
   font-size: 1.25rem;
   color: var(--color-text-subtle);
-  margin-top: 5px;
 }
 
-/* شريط أسفل الصفحة بالكامل للحقوق والرابط */
-.bottom-credit-bar {
-  position: relative;
-  z-index: 10;
+/* زينة زهور الحناء وطبق القش التراثي أسفل الصفحة */
+.bottom-heritage-decor {
   width: 100%;
-  text-align: center;
-  padding: 10px 15px 35px 15px;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 28px 28px;
+  line-height: 0;
+  pointer-events: auto;
+}
+
+.bottom-decor-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  filter: drop-shadow(0 -4px 12px rgba(184, 74, 91, 0.12));
 }
 
 .instagram-credit-link {
@@ -583,6 +613,22 @@ body {
   border: 1px solid rgba(184, 74, 91, 0.2);
   transition: all 0.25s ease;
   font-weight: 600;
+}
+
+.instagram-credit-link.overlay-credit {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  white-space: nowrap;
+  background: rgba(255, 246, 247, 0.88);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(184, 74, 91, 0.25);
+  box-shadow: 0 4px 14px rgba(184, 74, 91, 0.08);
+  padding: 6px 18px;
+  font-size: 0.84rem;
 }
 
 .instagram-credit-link:hover {
