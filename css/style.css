@@ -636,7 +636,10 @@ body {
   color: #fff;
   border-color: transparent;
   box-shadow: 0 4px 14px rgba(225, 48, 108, 0.3);
-  transform: translateY(-2px);
+}
+
+.instagram-credit-link.overlay-credit:hover {
+  transform: translateX(-50%);
 }
 
 .instagram-credit-link i {
