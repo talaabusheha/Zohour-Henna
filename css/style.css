@@ -582,11 +582,14 @@ body {
 
 /* زينة زهور الحناء وطبق القش التراثي أسفل الصفحة */
 .bottom-heritage-decor {
-  width: 100%;
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: -50px;
   margin-top: 10px;
   position: relative;
   overflow: hidden;
-  border-radius: 0 0 28px 28px;
+  border-radius: 0;
   line-height: 0;
   pointer-events: auto;
 }
