@@ -32,7 +32,8 @@ window.invitationData = {
   eventDateHijri: "22 ربيع الآخر 1448 هـ",
   eventDateTimeISO: "2026-09-28T15:00:00",
 
-  // --- معلومات تأكيد الحضور (RSVP) عبر الواتساب ---
+  // --- معلومات تأكيد الحضور (RSVP) والملاحظات ---
+  singlePersonNote: "بطاقة لشخص واحد فقط",
   whatsappNumber: "+970590000000",
 
   // --- أهازيج الحناء التراثية ---

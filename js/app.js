@@ -54,6 +54,7 @@ function initInvitationContent(data) {
   setElementText('venue-city', data.venueCity || 'غزة');
   setElementText('event-date-greg', data.eventDateGregorian || '2026 / 9 / 28');
   setElementText('event-date-hijri', data.eventDateHijri || '22 ربيع الآخر 1448 هـ');
+  setElementText('single-person-note-text', data.singlePersonNote || 'بطاقة لشخص واحد فقط');
 }
 
 function setElementText(id, text) {

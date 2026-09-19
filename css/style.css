@@ -561,6 +561,27 @@ body {
   margin-top: 10px;
 }
 
+.single-card-note {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  color: var(--color-crimson);
+  background: rgba(142, 27, 36, 0.07);
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(142, 27, 36, 0.22);
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 3px 10px rgba(142, 27, 36, 0.05);
+  transition: all 0.3s ease;
+}
+
+.single-card-note i {
+  color: var(--color-rose-accent);
+  font-size: 1rem;
+}
+
 .no-kids-note {
   font-family: var(--font-body);
   font-size: 0.9rem;
@@ -591,7 +612,7 @@ body {
   overflow: hidden;
   border-radius: 0;
   line-height: 0;
-  pointer-events: auto;
+  pointer-events: auto
 }
 
 .bottom-decor-img {
